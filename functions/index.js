@@ -13,10 +13,10 @@ exports.addPessoa = onRequest(async (req, res) => {
     });
   }
 
-  const writeResult = await admin.firestore()
+  await admin.firestore()
       .collection("pessoas")
       .add({name});
-  res.json({result: `Pessoa with ID: ${writeResult.id} added.`});
+  res.status(200).send({result: `Pessoa adicionada com sucesso`});
 });
 
 exports.updateIncrementId = onDocumentCreated("pessoas/{docId}", async (event) => {

@@ -21,6 +21,11 @@ Inicialização
 - Rodar `npm install`
 - Rodar `npm run serve`
 
+Testes
+---------------
+- Instalar o pacote `npm install --global jest`
+- Rodar `jest --watchAll --coverage` 
+
 Observações
 ---------------
 - O link para envio dos testes vai ser mostrado no console
